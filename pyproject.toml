@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solars-net-billing-calculator"
+version = "1.0.0"
+description = "Commercial Solar PV & Net Billing ROI Economic Calculator for Enterprises & Agricultural Facilities in Ukraine"
+readme = "README.md"
+authors = [{ name = "Roman Gridasov", email = "pinnercode.ml@gmail.com" }]
+license = { text = "MIT" }
+keywords = ["net-billing", "solar", "photovoltaics", "agro-pv", "solars", "commercial-solar", "ukraine"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://solars.com.ua/"
+"Documentation" = "https://solars.com.ua/"
+"Bug Tracker" = "https://github.com/romangrid/solars-net-billing-calculator/issues"
+
+[project.scripts]
+solars-calc = "solars_netbilling.cli:main"
